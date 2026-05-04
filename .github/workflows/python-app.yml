@@ -36,6 +36,6 @@ jobs:
         pip install -r api_server/requirements.txt
         cd api_server && uvicorn main:app --host 127.0.0.1 --port 8000 &
         sleep 3
-    - name: Test with behave (BDD)
+  - name: Test with behave (BDD)
       run: |
-        behave BDD/features/
+        PYTHONPATH=. behave BDD/features/
