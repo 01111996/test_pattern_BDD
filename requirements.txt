@@ -1,0 +1,4 @@
+selenium
+pytest
+behave
+requests
